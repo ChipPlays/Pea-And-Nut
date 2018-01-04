@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\music</sound>
+    <sound>sound\watch_out</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
@@ -40,13 +41,14 @@
     <sprite>sprites\sprite29</sprite>
     <sprite>sprites\sprite30</sprite>
     <sprite>sprites\sprite31</sprite>
+    <sprite>sprites\sprite32</sprite>
+    <sprite>sprites\glass</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\font0</font>
   </fonts>
@@ -81,6 +83,9 @@
     <object>objects\object40</object>
     <object>objects\big_stone</object>
     <object>objects\technical_thing</object>
+    <object>objects\obj_player_zombie</object>
+    <object>objects\object31</object>
+    <object>objects\music_play</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
