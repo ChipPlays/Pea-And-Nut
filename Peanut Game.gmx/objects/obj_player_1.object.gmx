@@ -127,7 +127,7 @@ y += vsp;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="object5">
+    <event eventtype="4" ename="obj_spike">
       <action>
         <libid>1</libid>
         <id>603</id>

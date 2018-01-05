@@ -45,52 +45,58 @@
     <sprite>sprites\glass</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\background0</background>
-    <background>background\background1</background>
+    <background>background\ba_idk_this_is_outdated</background>
+    <background>background\ba_sky</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\font0</font>
   </fonts>
   <objects name="objects">
-    <object>objects\object0</object>
     <object>objects\obj_player_1</object>
     <object>objects\obj_player_2</object>
-    <object>objects\object2</object>
-    <object>objects\object3</object>
-    <object>objects\object5</object>
-    <object>objects\ded</object>
-    <object>objects\object7</object>
-    <object>objects\object10</object>
-    <object>objects\object11</object>
-    <object>objects\object12</object>
-    <object>objects\object13</object>
-    <object>objects\object14</object>
-    <object>objects\p1_controls</object>
-    <object>objects\p2_controls</object>
-    <object>objects\object28</object>
-    <object>objects\object29</object>
+    <object>objects\obj_grass</object>
+    <object>objects\obj_flag</object>
+    <object>objects\obj_backgroundtile_dirt</object>
     <object>objects\obj_light</object>
     <object>objects\obj_control</object>
-    <object>objects\barrier</object>
-    <object>objects\horizontal_barrier</object>
-    <object>objects\object34</object>
-    <object>objects\object35</object>
-    <object>objects\object36</object>
-    <object>objects\lava_glow</object>
-    <object>objects\stone</object>
-    <object>objects\lava</object>
-    <object>objects\object40</object>
-    <object>objects\big_stone</object>
     <object>objects\technical_thing</object>
-    <object>objects\obj_player_zombie</object>
-    <object>objects\object31</object>
     <object>objects\music_play</object>
+    <objects name="Blocks">
+      <object>objects\obj_glass</object>
+      <object>objects\obj_lava_top</object>
+      <object>objects\obj_lava_glow</object>
+      <object>objects\obj_stone</object>
+      <object>objects\obj_lava</object>
+      <object>objects\obj_backgroundtile_lava</object>
+      <object>objects\obj_backgroundtile_stone</object>
+      <object>objects\horizontal_barrier</object>
+      <object>objects\barrier</object>
+      <object>objects\obj_wood_wall</object>
+      <object>objects\object13</object>
+      <object>objects\object14</object>
+      <object>objects\obj_wood</object>
+      <object>objects\obj_water</object>
+      <object>objects\obj_dirt</object>
+      <object>objects\object0</object>
+    </objects>
+    <objects name="Hazardous Objects">
+      <object>objects\obj_death</object>
+      <object>objects\obj_spike</object>
+      <object>objects\obj_player_zombie</object>
+    </objects>
+    <objects name="Text">
+      <object>objects\obj_text_tutorial_finished</object>
+      <object>objects\obj_text_watchout</object>
+      <object>objects\obj_text_p2_controls</object>
+      <object>objects\object34</object>
+      <object>objects\obj_text_p1_controls</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
-    <room>rooms\room1</room>
-    <room>rooms\room2</room>
+    <room>rooms\Tutorial</room>
+    <room>rooms\Level_1</room>
+    <room>rooms\Level_2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
