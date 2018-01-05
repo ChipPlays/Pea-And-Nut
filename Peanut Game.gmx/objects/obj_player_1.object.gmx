@@ -25,18 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>friction = 0.5;
+            <string>///Veriables
+grav = 1;
+vsp = 0;
+hsp = 0;
+friction = 0.7;
+jumpspeed = 14;
+movespeed = 5;
 image_speed = 0;
-image_index = 1;
-gravity = 1;
-
-facing = -1;
-
-// 1 = right
-// -1 = left
-
-globalvar jump;
-jump = keyboard_check_pressed(vk_space);
 </string>
           </argument>
         </arguments>
@@ -59,74 +55,76 @@ jump = keyboard_check_pressed(vk_space);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check_pressed(ord("R")) room_restart();
+            <string>///Player Input KeyBoard
+right_key = keyboard_check(vk_right);
+left_key = -keyboard_check(vk_left);
+space_bar = keyboard_check_pressed(vk_space);
 
-if keyboard_check(vk_right) hspeed += 9;
-if keyboard_check(vk_left) hspeed -= 9;
+//Reactions//
+//Movement//
 
-if hspeed &gt; 6 
-hspeed = 6;
-
-if hspeed &lt; -6
-hspeed = -6;
-
-if vspeed &lt; 10
-vspeed = vspeed + gravity/2
-
-if (place_meeting(x,y+vspeed,object0))
+//None//
+if (right_key = 0) &amp;&amp; (left_key = 0)
 {
-    while(!place_meeting(x,y+sign(vspeed),object0))
+    if hsp != 0
     {
-        y += sign(vspeed);
+        hsp /= 1.4
     }
-    vspeed = 0;
 }
 
-y += vspeed;
+//Both//
+if (right_key = 1) &amp;&amp; (left_key = -1)
+{
+    hsp = 0
+}
+
+//Right//
+if (right_key = 1)
+{
+    hsp = movespeed;
+}
+
+//Left//
+if (left_key = -1)
+{
+    hsp = -movespeed;
+}
+
+//Gravity//
+if (vsp &lt; 10) vsp += grav;
+
+//Jumping//
+if(place_meeting(x,y+1,object0))
+{
+    vsp += space_bar * -jumpspeed
+}
+//Horizontal Collision//
+if (place_meeting(x+hsp,y,object0))
+{
+    while(!place_meeting(x+sign(hsp),y,object0))
+    {
+        x += sign(hsp);
+    }
+    hsp = 0;
+}
+
+x += hsp;
+
+
+//Vertical Collision//
+if (place_meeting(x,y+vsp,object0))
+{
+    while(!place_meeting(x,y+sign(vsp),object0))
+    {
+        y += sign(vsp);
+    }
+    vsp = 0;
+}
+
+y += vsp;
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="object36">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>with (obj_player_1)
-   {
-    instance_destroy()};
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="ded">
-      <action>
-        <libid>1</libid>
-        <id>223</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_current_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="4" ename="object5">
@@ -146,10 +144,7 @@ y += vspeed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (obj_player_1)
-   {
-    instance_destroy()};
-   
+            <string>instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -177,31 +172,6 @@ y += vspeed;
           <argument>
             <kind>3</kind>
             <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_self();
-
-
-</string>
           </argument>
         </arguments>
       </action>
