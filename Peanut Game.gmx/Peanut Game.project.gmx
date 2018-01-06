@@ -43,6 +43,9 @@
     <sprite>sprites\sprite31</sprite>
     <sprite>sprites\sprite32</sprite>
     <sprite>sprites\glass</sprite>
+    <sprite>sprites\sprite34</sprite>
+    <sprite>sprites\sprite35</sprite>
+    <sprite>sprites\sprite36</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\ba_idk_this_is_outdated</background>
@@ -64,11 +67,8 @@
     <object>objects\music_play</object>
     <objects name="Blocks">
       <object>objects\obj_glass</object>
-      <object>objects\obj_lava_top</object>
       <object>objects\obj_lava_glow</object>
       <object>objects\obj_stone</object>
-      <object>objects\obj_lava</object>
-      <object>objects\obj_backgroundtile_lava</object>
       <object>objects\obj_backgroundtile_stone</object>
       <object>objects\horizontal_barrier</object>
       <object>objects\barrier</object>
@@ -79,11 +79,17 @@
       <object>objects\obj_water</object>
       <object>objects\obj_dirt</object>
       <object>objects\object0</object>
+      <object>objects\obj_roof_outer_corner</object>
+      <object>objects\obj_backgroundtile_wood</object>
+      <object>objects\obj_brick</object>
     </objects>
     <objects name="Hazardous Objects">
       <object>objects\obj_death</object>
       <object>objects\obj_spike</object>
       <object>objects\obj_player_zombie</object>
+      <object>objects\obj_lava_top</object>
+      <object>objects\obj_lava</object>
+      <object>objects\obj_backgroundtile_lava</object>
     </objects>
     <objects name="Text">
       <object>objects\obj_text_tutorial_finished</object>
