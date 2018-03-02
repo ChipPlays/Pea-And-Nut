@@ -197,8 +197,8 @@
     <instance objName="obj_death" x="1584" y="1056" name="inst_576E62C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_death" x="1616" y="1056" name="inst_FEC03AAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_flag" x="2864" y="496" name="inst_475A91DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_1" x="360" y="488" name="inst_A13DFE4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player_2" x="328" y="488" name="inst_E05AD0BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_1" x="352" y="464" name="inst_A13DFE4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_2" x="328" y="472" name="inst_E05AD0BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_text_p1_controls" x="232" y="440" name="inst_A9A39F24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_text_p2_controls" x="280" y="440" name="inst_02655663" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_text_watchout" x="912" y="416" name="inst_650D1C5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -46,10 +46,18 @@
     <sprite>sprites\sprite34</sprite>
     <sprite>sprites\sprite35</sprite>
     <sprite>sprites\sprite36</sprite>
+    <sprite>sprites\spr_player_1_stationary</sprite>
+    <sprite>sprites\spr_player_1_run_right</sprite>
+    <sprite>sprites\spr_player_1_run_left</sprite>
+    <sprite>sprites\spr_player_2_stationary</sprite>
+    <sprite>sprites\spr_player_2_run_right</sprite>
+    <sprite>sprites\spr_player_2_run_left</sprite>
+    <sprite>sprites\spr_player_1_crouch</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\ba_idk_this_is_outdated</background>
     <background>background\ba_sky</background>
+    <background>background\ba_main_menu</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -101,6 +109,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\Tutorial</room>
+    <room>rooms\room4</room>
     <room>rooms\Level_1</room>
     <room>rooms\Level_2</room>
   </rooms>

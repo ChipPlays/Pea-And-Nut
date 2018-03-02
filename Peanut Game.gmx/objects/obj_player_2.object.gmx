@@ -25,14 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Veriables
+            <string>///Variables
 grav = 1;
 vsp = 0;
 hsp = 0;
 friction = 0.7;
 jumpspeed = 14;
 movespeed = 5;
-image_speed = 0;
+image_speed = 2/30;
 </string>
           </argument>
         </arguments>
@@ -122,6 +122,74 @@ if (place_meeting(x,y+vsp,object0))
 }
 
 y += vsp;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Animation
+if(x = xprevious)
+{
+sprite_index = spr_player_2_stationary
+image_speed = 2/30
+}
+
+if (x &gt; xprevious)
+{
+sprite_index = spr_player_2_run_right
+image_speed = 10/30
+}
+
+if (x &lt; xprevious)
+{
+sprite_index = spr_player_2_run_left
+image_speed = 10/30
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///gets rid of tiny movment
+if (hsp &lt; 0.1) &amp;&amp; (hsp &gt; 0)
+{
+hsp = 0
+}
+
+if (hsp &gt; -0.1) &amp;&amp; (hsp &lt; 0)
+{
+hsp = 0
+}
 </string>
           </argument>
         </arguments>
