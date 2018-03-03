@@ -53,6 +53,9 @@
     <sprite>sprites\spr_player_2_run_right</sprite>
     <sprite>sprites\spr_player_2_run_left</sprite>
     <sprite>sprites\spr_player_1_crouch</sprite>
+    <sprite>sprites\spr_play</sprite>
+    <sprite>sprites\spr_quit</sprite>
+    <sprite>sprites\spr_blood</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\ba_idk_this_is_outdated</background>
@@ -90,6 +93,7 @@
       <object>objects\obj_roof_outer_corner</object>
       <object>objects\obj_backgroundtile_wood</object>
       <object>objects\obj_brick</object>
+      <object>objects\obj_blood</object>
     </objects>
     <objects name="Hazardous Objects">
       <object>objects\obj_death</object>
@@ -106,12 +110,15 @@
       <object>objects\object34</object>
       <object>objects\obj_text_p1_controls</object>
     </objects>
+    <object>objects\obj_play</object>
+    <object>objects\obj_quit</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\main_menu</room>
     <room>rooms\Tutorial</room>
-    <room>rooms\room4</room>
     <room>rooms\Level_1</room>
     <room>rooms\Level_2</room>
+    <room>rooms\Level_3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
