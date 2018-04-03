@@ -7,6 +7,10 @@
   <sounds name="sound">
     <sound>sound\music</sound>
     <sound>sound\watch_out</sound>
+    <sound>sound\snd_explosion</sound>
+    <sound>sound\snd_scream</sound>
+    <sound>sound\snd_stomp</sound>
+    <sound>sound\snd_pop</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
@@ -56,6 +60,13 @@
     <sprite>sprites\spr_play</sprite>
     <sprite>sprites\spr_quit</sprite>
     <sprite>sprites\spr_blood</sprite>
+    <sprite>sprites\spr_nut_1</sprite>
+    <sprite>sprites\spr_nut_2</sprite>
+    <sprite>sprites\spr_nut_3</sprite>
+    <sprite>sprites\spr_nut_4</sprite>
+    <sprite>sprites\spr_coconut</sprite>
+    <sprite>sprites\spr_crate</sprite>
+    <sprite>sprites\spr_explosion</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\ba_idk_this_is_outdated</background>
@@ -94,6 +105,7 @@
       <object>objects\obj_backgroundtile_wood</object>
       <object>objects\obj_brick</object>
       <object>objects\obj_blood</object>
+      <object>objects\obj_explosion</object>
     </objects>
     <objects name="Hazardous Objects">
       <object>objects\obj_death</object>
@@ -112,13 +124,20 @@
     </objects>
     <object>objects\obj_play</object>
     <object>objects\obj_quit</object>
+    <object>objects\obj_nut_1</object>
+    <object>objects\obj_nut_2</object>
+    <object>objects\obj_nut_3</object>
+    <object>objects\obj_nut_4</object>
+    <object>objects\obj_coconut</object>
+    <object>objects\obj_enemy_nut</object>
+    <object>objects\obj_crate</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
     <room>rooms\Tutorial</room>
     <room>rooms\Level_1</room>
     <room>rooms\Level_2</room>
-    <room>rooms\Level_3</room>
+    <room>rooms\level_3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

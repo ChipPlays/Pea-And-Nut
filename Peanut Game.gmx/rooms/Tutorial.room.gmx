@@ -850,7 +850,16 @@
     <instance objName="obj_spike" x="2416" y="320" name="inst_9A656CE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="2320" y="448" name="inst_5014957D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spike" x="2592" y="448" name="inst_9A0531E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blood" x="144" y="448" name="inst_98542773" locked="0" code="" scaleX="5.5" scaleY="5.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blood" x="128" y="464" name="inst_98542773" locked="0" code="" scaleX="5.5" scaleY="5.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_nut" x="128" y="480" name="inst_AC4B7C12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_nut" x="208" y="480" name="inst_500D6CBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_nut" x="48" y="480" name="inst_0E10CA1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_nut" x="496" y="464" name="inst_4D37CF37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_nut" x="688" y="464" name="inst_65394601" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_nut" x="1904" y="480" name="inst_54BCC72F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_nut" x="2176" y="480" name="inst_FB70D4C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_enemy_nut" x="1600" y="432" name="inst_D5EF8E84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_crate" x="448" y="448" name="inst_27A92DB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

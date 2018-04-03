@@ -978,6 +978,7 @@
     <instance objName="obj_dirt" x="3296" y="512" name="inst_9CC6A72B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_dirt" x="3312" y="512" name="inst_D0D2B801" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_backgroundtile_dirt" x="2848" y="592" name="inst_A99918DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_coconut" x="1120" y="400" name="inst_96F89A70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
