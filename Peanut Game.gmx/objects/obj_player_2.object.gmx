@@ -194,8 +194,6 @@ hsp = 0
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_spike">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -212,7 +210,15 @@ hsp = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy();
+            <string>///death 
+if place_meeting(x, y, obj_spike)
+{
+instance_create(obj_player_2.x, obj_player_2.y, obj_blood);
+instance_create(obj_player_2.x, obj_player_2.y, obj_explosion);
+audio_play_sound(snd_scream_2, 99, false);
+audio_play_sound(snd_explosion, 99, false);
+instance_destroy();
+}
 </string>
           </argument>
         </arguments>

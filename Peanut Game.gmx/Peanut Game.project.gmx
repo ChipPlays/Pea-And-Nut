@@ -9,8 +9,11 @@
     <sound>sound\watch_out</sound>
     <sound>sound\snd_explosion</sound>
     <sound>sound\snd_scream</sound>
-    <sound>sound\snd_stomp</sound>
     <sound>sound\snd_pop</sound>
+    <sound>sound\snd_maintheme</sound>
+    <sound>sound\snd_scream_1</sound>
+    <sound>sound\snd_scream_2</sound>
+    <sound>sound\snd_nutopedia</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
@@ -67,11 +70,23 @@
     <sprite>sprites\spr_coconut</sprite>
     <sprite>sprites\spr_crate</sprite>
     <sprite>sprites\spr_explosion</sprite>
+    <sprite>sprites\spr_button_1</sprite>
+    <sprite>sprites\spr_almond_description</sprite>
+    <sprite>sprites\spr_button_2</sprite>
+    <sprite>sprites\spr_cashews_description</sprite>
+    <sprite>sprites\spr_acorn_description</sprite>
+    <sprite>sprites\spr_button_3</sprite>
+    <sprite>sprites\spr_button_4</sprite>
+    <sprite>sprites\spr_pecan_description</sprite>
+    <sprite>sprites\spr_button_5</sprite>
+    <sprite>sprites\spr_coconut_description</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\ba_idk_this_is_outdated</background>
     <background>background\ba_sky</background>
     <background>background\ba_main_menu</background>
+    <background>background\ba_nutopedia</background>
+    <background>background\clouds</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -86,7 +101,6 @@
     <object>objects\obj_light</object>
     <object>objects\obj_control</object>
     <object>objects\technical_thing</object>
-    <object>objects\music_play</object>
     <objects name="Blocks">
       <object>objects\obj_glass</object>
       <object>objects\obj_lava_glow</object>
@@ -106,6 +120,11 @@
       <object>objects\obj_brick</object>
       <object>objects\obj_blood</object>
       <object>objects\obj_explosion</object>
+      <object>objects\obj_button_1</object>
+      <object>objects\obj_button_2</object>
+      <object>objects\obj_button_3</object>
+      <object>objects\obj_button_4</object>
+      <object>objects\obj_button_5</object>
     </objects>
     <objects name="Hazardous Objects">
       <object>objects\obj_death</object>
@@ -131,9 +150,23 @@
     <object>objects\obj_coconut</object>
     <object>objects\obj_enemy_nut</object>
     <object>objects\obj_crate</object>
+    <object>objects\obj_nut_1_stationary</object>
+    <object>objects\obj_nut_2_stationary</object>
+    <object>objects\obj_nut_3_stationary</object>
+    <object>objects\obj_nut_4_stationary</object>
+    <object>objects\obj_coconut_stationary</object>
+    <object>objects\obj_almond_description</object>
+    <object>objects\obj_cashew_description</object>
+    <object>objects\obj_acorn_description</object>
+    <object>objects\obj_pecan_description</object>
+    <object>objects\obj_coconut_description</object>
+    <object>objects\marker1</object>
+    <object>objects\marker2</object>
+    <object>objects\obj_zoom</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
+    <room>rooms\nutopedia</room>
     <room>rooms\Tutorial</room>
     <room>rooms\Level_1</room>
     <room>rooms\Level_2</room>

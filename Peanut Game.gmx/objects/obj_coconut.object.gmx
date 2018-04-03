@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>self</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -38,13 +38,6 @@ image_speed = 5/60
 
 ///No Fall Variable
 fearofheights = 0;
-
-//Sound emitter\\
-scream = audio_emitter_create();
-audio_falloff_set_model(audio_falloff_linear_distance)
-audio_play_sound_on(scream, snd_scream, true, 99);
-audio_play_sound_on(scream, snd_stomp, true, 99);
-
 </string>
           </argument>
         </arguments>
@@ -112,7 +105,7 @@ if (place_meeting(x,y,obj_player_1))
     }
     else
     { 
-    instance_create(x, y, obj_explosion)
+    instance_create(x, y, obj_blood)
     instance_destroy(obj_player_1)
     }
 }
@@ -126,7 +119,7 @@ if (place_meeting(x, y, obj_player_2))
         audio_play_sound(snd_explosion,8,false);
         global.points += 5
         audio_stop_sound(snd_scream)
-        instance_create(x, y, obj_blood)
+        instance_create(x, y, obj_explosion)
         instance_destroy();
     }
     else
@@ -137,28 +130,33 @@ if (place_meeting(x, y, obj_player_2))
 
 }
 
-audio_emitter_position(scream, x, y, 0);
-audio_emitter_falloff(scream, 128, 256, 1);
-
-if instance_exists(obj_player_1)
-{
-audio_listener_position(obj_player_1.x, obj_player_1.y, 0)
-}
-else
-{
-
-}
-
-if instance_exists(obj_player_2)
-{
-audio_listener_position(obj_player_2.x, obj_player_2.y, 0)
-}
-else
-{
-
-}
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if distance_to_object(obj_player_1) &lt; 300 || distance_to_object(obj_player_2) &lt; 300
+audio_play_sound(snd_scream, 1, true);
+
+if distance_to_object(obj_player_1) &gt; 300 || distance_to_object(obj_player_2) &gt; 300
+audio_stop_sound(snd_scream);
 </string>
           </argument>
         </arguments>
