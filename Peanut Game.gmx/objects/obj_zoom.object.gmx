@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>ggg = 5
+fff = 5
 </string>
           </argument>
         </arguments>
@@ -48,7 +49,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check_pressed(vk_subtract) &amp;&amp; (ggg &lt;= 15) &amp;&amp; (ggg &gt;= -5) || ggg = -6
+            <string>//PLAYER 1
+if keyboard_check_pressed(vk_subtract) &amp;&amp; (ggg &lt;= 15) &amp;&amp; (ggg &gt;= -5) || ggg = -6
 {
 ggg += 1;
 view_wview += 20;
@@ -59,6 +61,19 @@ if keyboard_check_pressed(vk_add) &amp;&amp; (ggg &lt;= 16) &amp;&amp; (ggg &gt;
 ggg -= 1;
 view_wview -= 20;
 view_hview -= 22.5;
+}
+//PLAYER 2
+if keyboard_check_pressed(vk_divide) &amp;&amp; (fff &lt;= 15) &amp;&amp; (fff &gt;= -5) || fff = -6
+{
+fff += 1;
+view_wview[1] += 20;
+view_hview[1] += 22.5;
+}
+if keyboard_check_pressed(vk_multiply) &amp;&amp; (fff &lt;= 16) &amp;&amp; (fff &gt;= -5)
+{
+fff -= 1;
+view_wview[1] -= 20;
+view_hview[1] -= 22.5;
 }
 </string>
           </argument>

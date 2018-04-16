@@ -48,9 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if !instance_exists(obj_player_1) &amp;&amp; !instance_exists(obj_player_2) room_restart();
-
-if keyboard_check_pressed (ord("R"))
+            <string>if keyboard_check_pressed (ord("R"))
 {
 audio_stop_sound(snd_scream);
 room_restart();
@@ -90,7 +88,7 @@ if keyboard_check_pressed (ord("F"))
           <argument>
             <kind>1</kind>
             <string>///sound
-audio_stop_all();
+global.ded = 0;
 
 if room = nutopedia
 {
@@ -99,15 +97,53 @@ audio_play_sound(snd_nutopedia, 99, true);
 }
 else
 {
-audio_stop_sound(snd_nutopedia);
-audio_play_sound(snd_maintheme, 99, true);
+audio_stop_sound(snd_nutopedia)
 }
+
+if instance_exists(obj_coconut)
+audio_play_sound(snd_scream, 99, true);
+
+if room = Tutorial
+audio_stop_all();
+
+if room = Tutorial
+audio_play_sound(snd_bgmtrack_1, 8, true);
+
+if !room = nutopedia &amp;&amp; !room = main_menu
+    {
+    if !audio_is_playing(snd_bgmtrack_1)
+        {
+        audio_play_sound(snd_bgmtrack_1, 8, true);
+        }
+    }
 </string>
           </argument>
         </arguments>
       </action>
     </event>
     <event eventtype="7" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.points = 0;
+global.ded = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>211</id>
@@ -129,27 +165,6 @@ audio_play_sound(snd_maintheme, 99, true);
           <argument>
             <kind>3</kind>
             <string>1</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.points = 0
-</string>
           </argument>
         </arguments>
       </action>

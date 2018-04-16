@@ -14,6 +14,11 @@
     <sound>sound\snd_scream_1</sound>
     <sound>sound\snd_scream_2</sound>
     <sound>sound\snd_nutopedia</sound>
+    <sound>sound\snd_fuse</sound>
+    <sound>sound\snd_hit</sound>
+    <sound>sound\snd_bgm_1</sound>
+    <sound>sound\snd_bgmtrack_1</sound>
+    <sound>sound\snd_fire_death</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
@@ -80,6 +85,29 @@
     <sprite>sprites\spr_pecan_description</sprite>
     <sprite>sprites\spr_button_5</sprite>
     <sprite>sprites\spr_coconut_description</sprite>
+    <sprite>sprites\spr_placeholder</sprite>
+    <sprite>sprites\spr_shockwave</sprite>
+    <sprite>sprites\spr_grass_block_forest</sprite>
+    <sprite>sprites\spr_grass_forest</sprite>
+    <sprite>sprites\spr_dirt_forest</sprite>
+    <sprite>sprites\spr_pine_tree</sprite>
+    <sprite>sprites\spr_backgroundtile_dirt_forest</sprite>
+    <sprite>sprites\spr_enter</sprite>
+    <sprite>sprites\spr_water_top</sprite>
+    <sprite>sprites\spr_fire_death</sprite>
+    <sprite>sprites\spr_breath</sprite>
+    <sprite>sprites\spr_grass_block_forest_leftcorner</sprite>
+    <sprite>sprites\spr_grass_block_forest_rightcorner</sprite>
+    <sprite>sprites\spr_grass_forest_right</sprite>
+    <sprite>sprites\spr_forest_grass_left</sprite>
+    <sprite>sprites\spr_green_flag</sprite>
+    <sprite>sprites\spr_chest</sprite>
+    <sprite>sprites\spr_gold_stack_block</sprite>
+    <sprite>sprites\spr_gold_stack_block_right</sprite>
+    <sprite>sprites\spr_gold_stack_block_left</sprite>
+    <sprite>sprites\spr_ruby_side_left</sprite>
+    <sprite>sprites\spr_ruby_side_right</sprite>
+    <sprite>sprites\spr_goblet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\ba_idk_this_is_outdated</background>
@@ -95,12 +123,7 @@
   <objects name="objects">
     <object>objects\obj_player_1</object>
     <object>objects\obj_player_2</object>
-    <object>objects\obj_grass</object>
     <object>objects\obj_flag</object>
-    <object>objects\obj_backgroundtile_dirt</object>
-    <object>objects\obj_light</object>
-    <object>objects\obj_control</object>
-    <object>objects\technical_thing</object>
     <objects name="Blocks">
       <object>objects\obj_glass</object>
       <object>objects\obj_lava_glow</object>
@@ -113,26 +136,27 @@
       <object>objects\object14</object>
       <object>objects\obj_wood</object>
       <object>objects\obj_water</object>
+      <object>objects\obj_grass_block</object>
       <object>objects\obj_dirt</object>
+      <object>objects\obj_grass_block_forest</object>
+      <object>objects\obj_grass_block_forest_leftcorner</object>
+      <object>objects\obj_grass_block_forest_rightcorner</object>
+      <object>objects\obj_dirt_forest</object>
       <object>objects\object0</object>
       <object>objects\obj_roof_outer_corner</object>
       <object>objects\obj_backgroundtile_wood</object>
       <object>objects\obj_brick</object>
-      <object>objects\obj_blood</object>
-      <object>objects\obj_explosion</object>
-      <object>objects\obj_button_1</object>
-      <object>objects\obj_button_2</object>
-      <object>objects\obj_button_3</object>
-      <object>objects\obj_button_4</object>
-      <object>objects\obj_button_5</object>
+      <object>objects\obj_backgroundtile_dirt</object>
+      <object>objects\obj_backgroundtile_dirt_forest</object>
+      <object>objects\obj_water_top</object>
     </objects>
     <objects name="Hazardous Objects">
       <object>objects\obj_death</object>
       <object>objects\obj_spike</object>
-      <object>objects\obj_player_zombie</object>
       <object>objects\obj_lava_top</object>
       <object>objects\obj_lava</object>
       <object>objects\obj_backgroundtile_lava</object>
+      <object>objects\obj_crate</object>
     </objects>
     <objects name="Text">
       <object>objects\obj_text_tutorial_finished</object>
@@ -141,28 +165,64 @@
       <object>objects\object34</object>
       <object>objects\obj_text_p1_controls</object>
     </objects>
-    <object>objects\obj_play</object>
-    <object>objects\obj_quit</object>
-    <object>objects\obj_nut_1</object>
-    <object>objects\obj_nut_2</object>
-    <object>objects\obj_nut_3</object>
-    <object>objects\obj_nut_4</object>
-    <object>objects\obj_coconut</object>
-    <object>objects\obj_enemy_nut</object>
-    <object>objects\obj_crate</object>
-    <object>objects\obj_nut_1_stationary</object>
-    <object>objects\obj_nut_2_stationary</object>
-    <object>objects\obj_nut_3_stationary</object>
-    <object>objects\obj_nut_4_stationary</object>
-    <object>objects\obj_coconut_stationary</object>
-    <object>objects\obj_almond_description</object>
-    <object>objects\obj_cashew_description</object>
-    <object>objects\obj_acorn_description</object>
-    <object>objects\obj_pecan_description</object>
-    <object>objects\obj_coconut_description</object>
-    <object>objects\marker1</object>
-    <object>objects\marker2</object>
-    <object>objects\obj_zoom</object>
+    <objects name="Nuts">
+      <object>objects\obj_nut_1</object>
+      <object>objects\obj_nut_1_stationary</object>
+      <object>objects\obj_nut_2</object>
+      <object>objects\obj_nut_2_stationary</object>
+      <object>objects\obj_nut_3</object>
+      <object>objects\obj_nut_3_stationary</object>
+      <object>objects\obj_nut_4</object>
+      <object>objects\obj_nut_4_stationary</object>
+      <object>objects\obj_coconut</object>
+      <object>objects\obj_coconut_stationary</object>
+    </objects>
+    <objects name="Buttons &amp; Interfaces">
+      <object>objects\obj_button_1</object>
+      <object>objects\obj_button_2</object>
+      <object>objects\obj_button_3</object>
+      <object>objects\obj_button_4</object>
+      <object>objects\obj_button_5</object>
+      <object>objects\obj_almond_description</object>
+      <object>objects\obj_cashew_description</object>
+      <object>objects\obj_acorn_description</object>
+      <object>objects\obj_pecan_description</object>
+      <object>objects\obj_coconut_description</object>
+      <object>objects\obj_play</object>
+      <object>objects\obj_quit</object>
+    </objects>
+    <objects name="Technical Objects">
+      <object>objects\obj_zoom</object>
+      <object>objects\marker2</object>
+      <object>objects\marker1</object>
+      <object>objects\obj_enemy_nut</object>
+      <object>objects\technical_thing</object>
+      <object>objects\obj_control</object>
+      <object>objects\obj_light</object>
+      <object>objects\obj_win</object>
+      <object>objects\obj_fade_in</object>
+      <object>objects\obj_fade</object>
+    </objects>
+    <objects name="Decorations">
+      <object>objects\obj_breath2</object>
+      <object>objects\obj_breath</object>
+      <object>objects\obj_fire_death</object>
+      <object>objects\obj_pine_tree</object>
+      <object>objects\obj_grass_forest_left</object>
+      <object>objects\obj_grass_forest_right</object>
+      <object>objects\obj_grass_forest</object>
+      <object>objects\obj_grass</object>
+      <object>objects\obj_shockwave</object>
+      <object>objects\obj_explosion</object>
+      <object>objects\obj_blood</object>
+      <object>objects\obj_ruby_side_left</object>
+      <object>objects\obj_ruby_side_right</object>
+      <object>objects\obj_goblet</object>
+    </objects>
+    <object>objects\obj_chest</object>
+    <object>objects\obj_gold_stack_block</object>
+    <object>objects\obj_gold_stack_block_right</object>
+    <object>objects\obj_gold_stack_block_left</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_menu</room>
@@ -171,6 +231,7 @@
     <room>rooms\Level_1</room>
     <room>rooms\Level_2</room>
     <room>rooms\level_3</room>
+    <room>rooms\Forest_1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
